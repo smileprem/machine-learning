@@ -32,9 +32,9 @@ def plot_graph(leaf_node_mae_dict):
     plt.show()
 
 def main():
-    TRAINING_DATASET_PATH = "/001-house-prices/input/train.csv"
-    TESTING_DATASET_PATH = "/001-house-prices/input/test.csv"
-    SUBMISSION_FILE_PATH = "/001-house-prices/output/submission.csv"
+    TRAINING_DATASET_PATH = "/input/train.csv"
+    TESTING_DATASET_PATH = "/input/test.csv"
+    SUBMISSION_FILE_PATH = "/output/submission.csv"
 
     # Read the csv file as panda dataframe
     home_dataframe = pd.read_csv(os.getcwd() + TRAINING_DATASET_PATH)
