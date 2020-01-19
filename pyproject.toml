@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "machine-learning"
 version = "0.1.0"
-description = "ML Experiments by Premkumar Masilamani"
+description = "My ML experiments"
 authors = ["Premkumar Masilamani <prem@smileprem.com>"]
 
 [tool.poetry.dependencies]

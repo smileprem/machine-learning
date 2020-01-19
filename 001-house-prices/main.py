@@ -34,7 +34,7 @@ def plot_graph(leaf_node_mae_dict):
 def main():
     TRAINING_DATASET_PATH = "/001-house-prices/input/train.csv"
     TESTING_DATASET_PATH = "/001-house-prices/input/test.csv"
-    OUTPUT_FOLDER_PATH = "/001-house-prices/output/"
+    SUBMISSION_FILE_PATH = "/001-house-prices/output/submission.csv"
 
     # Read the csv file as panda dataframe
     home_dataframe = pd.read_csv(os.getcwd() + TRAINING_DATASET_PATH)
@@ -74,7 +74,7 @@ def main():
 
     # Save predictions in format used for kaggle competition scoring
     output = pd.DataFrame({'Id': test_dataframe.Id, 'SalePrice': test_predictions})
-    output.to_csv(os.getcwd() + OUTPUT_FOLDER_PATH + 'submission.csv', index=False)
+    output.to_csv(os.getcwd() + SUBMISSION_FILE_PATH, index=False)
 
     #Print the submission csv
     print(output.head())
